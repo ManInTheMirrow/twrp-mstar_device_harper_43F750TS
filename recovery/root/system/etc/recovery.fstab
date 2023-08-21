@@ -22,15 +22,15 @@ vendor                                                       /vendor            
 #/dev/block/platform/mstar_mci.0/by-name/metadata             /metadata                          ext4      noatime,nosuid,nodev,discard,sync                     wait,formattable,first_stage_mount
 # end
 /dev/block/platform/mstar_mci.0/by-name/cache                /cache                             ext4      noatime,nosuid,nodev                                  wait
-/dev/block/platform/mstar_mci.0/by-name/tvservice            /mnt/vendor/tvservice              squashfs      ro                                                    wait
-/dev/block/platform/mstar_mci.0/by-name/tvconfig             /vendor/tvconfig                   ext4      noatime,nosuid,nodev                                  wait
-/dev/block/platform/mstar_mci.0/by-name/tvcertificate        /vendor/tvcertificate              ext4      noatime,nosuid,nodev                                  wait
-/dev/block/platform/mstar_mci.0/by-name/cusdata              /vendor/cusdata                    ext4      noatime,nosuid,nodev,noexec                           wait
-/dev/block/platform/mstar_mci.0/by-name/project_id           /vendor/project_id                 ext4      ro,nodev                                              wait
+#/dev/block/platform/mstar_mci.0/by-name/tvservice            /mnt/vendor/tvservice              squashfs      ro                                                    wait
+#/dev/block/platform/mstar_mci.0/by-name/tvconfig             /vendor/tvconfig                   ext4      noatime,nosuid,nodev                                  wait
+#/dev/block/platform/mstar_mci.0/by-name/tvcertificate        /vendor/tvcertificate              ext4      noatime,nosuid,nodev                                  wait
+#/dev/block/platform/mstar_mci.0/by-name/cusdata              /vendor/cusdata                    ext4      noatime,nosuid,nodev,noexec                           wait
+#/dev/block/platform/mstar_mci.0/by-name/project_id           /vendor/project_id                 ext4      ro,nodev                                              wait
 # if DDI_SUPPORT != true
-/dev/block/platform/mstar_mci.0/by-name/factory_a            /vendor/factory                    ext4      noatime                                               wait,nofail
-/dev/block/platform/mstar_mci.0/by-name/linux_rootfs_a       /mnt/vendor/linux_rootfs           squashfs  ro                                                    wait
-/dev/block/platform/mstar_mci.0/by-name/3rd_a                /mnt/vendor/3rd                    squashfs  ro                                                    wait
+#/dev/block/platform/mstar_mci.0/by-name/factory_a            /vendor/factory                    ext4      noatime                                               wait,nofail
+#/dev/block/platform/mstar_mci.0/by-name/linux_rootfs_a       /mnt/vendor/linux_rootfs           squashfs  ro                                                    wait
+#/dev/block/platform/mstar_mci.0/by-name/3rd_a                /mnt/vendor/3rd                    squashfs  ro                                                    wait
 # end
 /dev/block/mmcblk0boot0                                      /boot1                             emmc      defaults                                              defaults
 /dev/block/mmcblk0boot1                                      /boot2                             emmc      defaults                                              defaults
