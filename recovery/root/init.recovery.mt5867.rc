@@ -13,7 +13,7 @@ on init
     mkdir /mnt/usb/mmcblka1
     mkdir /storage
 	
-	start set_permissive
+    start set_permissive
 
 on early-fs
     write /proc/sys/kernel/printk 7
