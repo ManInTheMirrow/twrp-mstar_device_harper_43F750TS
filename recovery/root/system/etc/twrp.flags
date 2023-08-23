@@ -1,10 +1,10 @@
 # Dynamic partitions
-/system                   ext4         /dev/block/mapper/system                                   flags=backup=1;display="System"
-/vendor                   ext4         /dev/block/mapper/vendor                                   flags=backup=1;display="Vendor"
+/system                   ext4         system                                                     flags=backup=1;display="System"
+/vendor                   ext4         vendor                                                     flags=backup=1;display="Vendor"
 
 # Images
-/system_image	          emmc  	   /dev/block/mapper/system                                   flags=backup=1;flashimg=1;display="System Image"
-/vendor_image	          emmc  	   /dev/block/mapper/vendor                                   flags=backup=1;flashimg=1;display="Vendor Image"
+/system_image	            emmc         /dev/block/mapper/system                                   flags=backup=1;flashimg=1;display="System Image"
+/vendor_image	            emmc         /dev/block/mapper/vendor                                   flags=backup=1;flashimg=1;display="Vendor Image"
 /tvservice_image          emmc         /dev/block/platform/mstar_mci.0/by-name/tvservice          flags=backup=1;flashimg=1;display="TVService Image"
 /tvconfig_image           emmc         /dev/block/platform/mstar_mci.0/by-name/tvconfig           flags=backup=1;flashimg=1;display="TVConfig Image"
 /tvcertificate_image      emmc         /dev/block/platform/mstar_mci.0/by-name/tvcertificate      flags=backup=1;flashimg=1;display="TVCertificate Image"
@@ -15,7 +15,6 @@
 /3rd_image                emmc         /dev/block/platform/mstar_mci.0/by-name/3rd_a              flags=backup=1;flashimg=1;display="3rd Image"
 
 # Common partitions
-/data               ext4         /dev/block/platform/mstar_mci.0/by-name/userdata
 /cache              ext4         /dev/block/platform/mstar_mci.0/by-name/cache              flags=display="Cache";backup=1;wipeingui;wipeduringfactoryreset
 /boot               emmc         /dev/block/platform/mstar_mci.0/by-name/boot               flags=display="Boot";backup=1;flashimg=1
 /recovery           emmc         /dev/block/platform/mstar_mci.0/by-name/recovery           flags=display="Recovery";backup=1;flashimg=1
